@@ -40,9 +40,11 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button className="gap-2 font-bold">
-            <Phone className="w-4 h-4" />
-            تواصل معنا
+          <Button asChild className="gap-2 font-bold">
+            <a href="tel:0551489385">
+              <Phone className="w-4 h-4" />
+              055 148 9385
+            </a>
           </Button>
         </div>
 
@@ -65,9 +67,11 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <Button className="w-full gap-2 mt-4">
-                <Phone className="w-4 h-4" />
-                تواصل معنا
+              <Button asChild className="w-full gap-2 mt-4">
+                <a href="tel:0551489385">
+                  <Phone className="w-4 h-4" />
+                  055 148 9385
+                </a>
               </Button>
             </div>
           </SheetContent>

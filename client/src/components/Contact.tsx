@@ -36,7 +36,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 mb-1">الهاتف</h3>
-                  <p className="text-slate-600" dir="ltr">+966 50 000 0000</p>
+                  <p className="text-slate-600" dir="ltr">055 148 9385</p>
                 </div>
               </CardContent>
             </Card>
@@ -52,7 +52,7 @@ export default function Contact() {
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="border-none shadow-md">
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary shrink-0">
@@ -82,7 +82,7 @@ export default function Contact() {
                       <Input placeholder="05xxxxxxxx" className="bg-slate-50 border-slate-200 text-right" dir="ltr" />
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-700">الخدمة المطلوبة</label>
                     <Input placeholder="مثال: صيانة تكييف، ترميم منزل..." className="bg-slate-50 border-slate-200" />

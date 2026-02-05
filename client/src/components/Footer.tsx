@@ -12,7 +12,7 @@ export default function Footer() {
               شريكك الموثوق في جدة للمقاولات العامة، الصيانة، وأنظمة التبريد والتكييف. نلتزم بأعلى معايير الجودة والسلامة.
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-bold text-white mb-4">روابط سريعة</h4>
             <ul className="space-y-2">
@@ -22,17 +22,17 @@ export default function Footer() {
               <li><a href="#contact" className="hover:text-primary transition-colors">تواصل معنا</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-bold text-white mb-4">تواصل معنا</h4>
             <ul className="space-y-2 text-sm">
               <li>جدة، المملكة العربية السعودية</li>
-              <li dir="ltr">+966 50 000 0000</li>
+              <li dir="ltr">055 148 9385</li>
               <li>info@majd-alasala.com</li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
           <p>© {new Date().getFullYear()} مؤسسة مجد الاصالة. جميع الحقوق محفوظة.</p>
         </div>

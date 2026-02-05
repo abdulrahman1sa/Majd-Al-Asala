@@ -28,7 +28,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          
+
           <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
               خبرة عريقة في <span className="text-primary">قلب جدة</span>
@@ -36,7 +36,7 @@ export default function About() {
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
               تأسست مؤسسة مجد الاصالة لتكون علامة فارقة في قطاع المقاولات والصيانة. نجمع بين الخبرة الفنية العميقة والتقنيات الحديثة لتقديم حلول مستدامة وعملية لعملائنا.
             </p>
-            
+
             <ul className="space-y-4 mb-8">
               {[
                 "فريق فني متخصص ومدرب",
@@ -50,9 +50,11 @@ export default function About() {
                 </li>
               ))}
             </ul>
-            
-            <Button size="lg" className="px-8">
-              تعرف علينا أكثر
+
+            <Button asChild size="lg" className="px-8">
+              <a href="https://wa.me/966551489385" target="_blank" rel="noopener noreferrer">
+                تعرف علينا أكثر
+              </a>
             </Button>
           </div>
         </div>

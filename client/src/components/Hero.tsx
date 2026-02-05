@@ -8,9 +8,9 @@ export default function Hero() {
     <section id="home" className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="موقع بناء" 
+        <img
+          src={heroBg}
+          alt="موقع بناء"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent" />
@@ -35,7 +35,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed"
           >
-            مؤسسة مجد الاصالة في جدة. رواد في مجال المقاولات العامة، الصيانة المتكاملة، وحلول التبريد والتكييف المتقدمة.
+            مؤسسة مجد الاصالة في جدة. رواد في مجال المقاولات العامة، الصيانة المتكاملة، وتصنيع غرف التبريد وحلول التكييف المتقدمة.
           </motion.p>
 
           <motion.div
@@ -44,12 +44,14 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button size="lg" className="text-lg px-8 h-14 bg-primary hover:bg-blue-600 text-white border-none">
-              خدماتنا
+            <Button asChild size="lg" className="text-lg px-8 h-14 bg-primary hover:bg-blue-600 text-white border-none cursor-pointer">
+              <a href="#services">خدماتنا</a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 h-14 bg-transparent text-white border-white hover:bg-white/10 hover:text-white">
-              تواصل معنا
-              <ArrowLeft className="mr-2 h-5 w-5" />
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 h-14 bg-transparent text-white border-white hover:bg-white/10 hover:text-white cursor-pointer">
+              <a href="#contact">
+                تواصل معنا
+                <ArrowLeft className="mr-2 h-5 w-5" />
+              </a>
             </Button>
           </motion.div>
         </div>

@@ -4,6 +4,7 @@ import { Hammer, Snowflake, Wrench } from "lucide-react";
 import imgContracting from "@/assets/service-contracting.png";
 import imgCooling from "@/assets/service-cooling.png";
 import imgMaintenance from "@/assets/service-maintenance.png";
+import imgCoolingRoom from "@/assets/service-cooling-room.jpg";
 
 const services = [
   {
@@ -17,6 +18,12 @@ const services = [
     description: "تركيب وصيانة أنظمة التكييف المركزي والوحدات المنفصلة وحلول التبريد الصناعي.",
     icon: Snowflake,
     image: imgCooling,
+  },
+  {
+    title: "غرف التبريد",
+    description: "صيانة وتصنيع غرف تبريد متحركة وثابتة بأحدث التقنيات لضمان أفضل حفظ للمنتجات.",
+    icon: Snowflake,
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800",
   },
   {
     title: "الصيانة العامة",
@@ -49,8 +56,8 @@ export default function Services() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full border-none shadow-md">
                 <div className="h-48 overflow-hidden relative group">
                   <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition-colors z-10" />
-                  <img 
-                    src={service.image} 
+                  <img
+                    src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
