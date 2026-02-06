@@ -3,10 +3,26 @@ import fs from "fs";
 import path from "path";
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(__dirname, "public");
-  if (!fs.existsSync(distPath)) {
+  // Check multiple possible locations for the build directory
+  const possiblePaths = [
+    path.resolve(__dirname, "public"),
+    path.resolve(__dirname, "..", "dist", "public"),
+    path.resolve(process.cwd(), "dist", "public")
+  ];
+
+  let distPath = "";
+  for (const p of possiblePaths) {
+    if (fs.existsSync(p) && fs.readdirSync(p).length > 0) {
+      distPath = p;
+      const { log } = require("./index");
+      log(`Found static files at: ${distPath}`);
+      break;
+    }
+  }
+
+  if (!distPath) {
     throw new Error(
-      `Could not find the build directory: ${distPath}, make sure to build the client first`,
+      `Could not find a valid build directory in any of these locations: ${possiblePaths.join(", ")}. Make sure to run 'npm run build' first.`,
     );
   }
 
