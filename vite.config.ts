@@ -4,15 +4,16 @@ import path from "path";
 
 export default defineConfig({
   root: "client",
-  base: "/Majd-Al-Asala/",
+  base: "/",
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client/src"),
+      "@shared": path.resolve(__dirname, "shared"),
     },
   },
   build: {
-    outDir: "docs",
+    outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
   },
 });
