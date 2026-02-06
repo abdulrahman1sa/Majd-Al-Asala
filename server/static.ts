@@ -1,6 +1,7 @@
 import express, { type Express } from "express";
 import fs from "fs";
 import path from "path";
+import { log } from "./log";
 
 export function serveStatic(app: Express) {
   // Check multiple possible locations for the build directory
@@ -14,7 +15,6 @@ export function serveStatic(app: Express) {
   for (const p of possiblePaths) {
     if (fs.existsSync(p) && fs.readdirSync(p).length > 0) {
       distPath = p;
-      const { log } = require("./index");
       log(`Found static files at: ${distPath}`);
       break;
     }
