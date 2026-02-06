@@ -28,7 +28,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>جدة، المملكة العربية السعودية</li>
               <li dir="ltr">055 148 9385</li>
-              <li>info@majd-alasala.com</li>
+              <li>info@majdalasalh.com</li>
             </ul>
           </div>
         </div>
